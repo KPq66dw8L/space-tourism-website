@@ -194,7 +194,9 @@ nav[role=navigation] {
   }
 
   #menuToggle a:hover {
-    color: tomato;
+    /* color: tomato; */
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
   }
 
 
@@ -282,7 +284,8 @@ nav[role=navigation] {
     padding: 50px;
     padding-top: 125px;
 
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -334,6 +337,12 @@ nav[role=navigation] {
   }
 
   #menuToggle {
-    left: 80px;
+    left: 200px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #menuToggle {
+    left: 70px;
   }
 }
