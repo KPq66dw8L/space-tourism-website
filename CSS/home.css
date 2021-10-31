@@ -1,5 +1,17 @@
+/* Primary colours definition */
+:root {
+    --dark: #0B0D17;
+    --light-violet: #D0D6F9;
+    --white: #FFFFFF;
+}
+
+body {
+    display: flex;
+}
+
 .home-background-div {
     background: url("../assets/home/background-home-desktop.jpg") no-repeat;
+    background-color: --dark;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -13,6 +25,7 @@
     height: 274px;
     border-radius: 50%;
     cursor: pointer;
+
 }
 
 .main-button-hover {
@@ -23,6 +36,9 @@
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
+    margin-top: 30vh;
+    margin-left: auto;
+    margin-right: 100px;
 }
 
 .main-button-hover:hover {
@@ -33,3 +49,10 @@
 .main-button h4 {
     color: var(--dark);
 }
+
+.home-content {
+    width: 500px;
+    margin-top: 40vh;
+    margin-left: 10vw;
+}
+
