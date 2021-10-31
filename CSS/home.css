@@ -1,0 +1,36 @@
+.home-background-div {
+    background: url("../assets/home/background-home-desktop.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-button-hover {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.main-button-hover:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.main-button h4 {
+    color: var(--dark);
+    font-weight: 400;
+}
