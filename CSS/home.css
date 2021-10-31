@@ -102,7 +102,7 @@ hr {
 
     body {
         background: url("../assets/home/background-home-tablet.jpg") no-repeat !important;
-        background-size: cover!important;
+        background-size: cover !important;
         padding-top: 10px;
         display: flex;
         flex-wrap: wrap;
@@ -116,5 +116,26 @@ hr {
 
     .main-button-hover {
         margin: 20vh 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background: url("../assets/home/background-home-mobile.jpg") no-repeat !important;
+        background-size: cover !important;
+    }
+
+    .home-content {
+        width: 250px;
+    }
+
+    .main-button {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main-button-hover {
+        width: 250px;
+        height: 250px;
     }
 }
