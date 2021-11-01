@@ -1,0 +1,174 @@
+/* Primary colours definition */
+:root {
+    --dark: #0B0D17;
+    --light-violet: #D0D6F9;
+    --white: #FFFFFF;
+}
+
+body {
+    background: url(../assets/crew/background-crew-desktop.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+strong {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+    font-size: 56px;
+}
+
+h4 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 32px;
+}
+
+.crew-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0;
+    margin: 5vh 10vw;
+    overflow-y: hidden;
+    height: 70vh;
+    overflow-x: hidden;
+    margin-bottom: 0;
+}
+
+.crew-all {
+    margin: 20vh 10vw 8vh 10vw;
+}
+
+.paragraph {
+    line-height: 32px;
+    margin-top: 30px;
+    width: 450px;
+}
+
+/* POSITIONS */
+
+.illu {
+    grid-column-start: 2;
+}
+
+.description {
+    grid-column-start: 1;
+    margin-top: 30px;
+    text-align: left;
+}
+
+/* END POSITION */
+
+h1 {
+    margin-top: 30px;
+}
+
+/* Snap scroll stuff */
+
+/* All the snapping stuff */
+.scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+section {
+    height: 100%;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+
+}
+
+/* Other styles */
+section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* End snap scroll stuff */
+
+/* TABLET */
+@media only screen and (max-width: 1200px) {
+    body {
+        padding-top: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .crew-content {
+        grid-template-rows: 0;
+        grid-template-columns: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        height: auto;
+
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    .illu {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .paragraph {
+        text-align: center;
+        line-height: 28px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .scroll-container {
+        width: 30%;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 650px) {
+    .crew-all {
+        margin: 15vh 5vw 15vh 5vw;
+    }
+
+    .crew-content {
+        grid-template-rows: 100px 200px 1fr;
+        margin: 0;
+    }
+
+    .scroll-container {
+        width: 28%;
+    }
+
+    h5 {
+        font-size: 16px;
+        margin-bottom: 8vh;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    .paragraph {
+        font-size: 15px;
+        width: 80%;
+    }
+}
