@@ -1,0 +1,180 @@
+/* Primary colours definition */
+:root {
+    --dark: #0B0D17;
+    --light-violet: #D0D6F9;
+    --white: #FFFFFF;
+}
+
+body {
+    background: url("../assets/technology/background-technology-desktop.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+.description-element .nav-text {
+    color: var(--light-violet);
+}
+
+.technology-content {
+    margin: 20vh 0 8vh 10vw;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 150px 40vw 1fr;
+}
+
+.description-count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-count a {
+    border: solid 1px var(--white);
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.description-count a {
+    padding: 15px 28px;
+}
+
+.description-count a:first-child {
+    padding: 15px 30px;
+}
+
+.description-count a:hover {
+    color: var(--dark);
+    background-color: var(--white);
+}
+
+.description-active {
+    color: var(--dark);
+    background-color: var(--white);
+}
+
+.description-element {
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 40px;
+}
+
+.description-element p {
+    line-height: 32px;
+    margin-top: 30px;
+}
+
+.technology-illu {
+    margin-left: auto;
+}
+
+.tablet {
+    display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+    body {
+        overflow: auto;
+    }
+
+    h5 {
+        font-size: 20px;
+        margin-left: 10vw;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .technology-content {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .description {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 150px 40vh;
+        margin-top: 10vh;
+    }
+
+    .description-element p:last-child {
+        line-height: 28px;
+        font-size: 16px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .technology-illu {
+        grid-row-start: 1;
+        margin-left: 0;
+        width: 101vw;
+
+    }
+
+    .description-count {
+        grid-row-start: 2;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+
+    .description-count a {
+        margin: 0 2vw;
+    }
+
+    .description-element {
+        grid-row-start: 3;
+        text-align: center;
+        padding: 0 20vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    nav {
+        position: absolute;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .description{
+        margin-bottom: 10vh;
+    }
+
+    .description-element h3 {
+        font-size: 24px;
+    }
+
+    .description-element .nav-text {
+        font-size: 14px;
+    }
+
+    .description-element p:last-child {
+        font-size: 15px;
+    }
+
+    .description-count a {
+        padding: 10px 16px;
+    }
+
+    .description-count a:first-child {
+        padding: 10px 18px;
+    }
+}

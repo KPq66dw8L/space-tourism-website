@@ -6,13 +6,9 @@
 }
 
 body {
-    background: url(../assets/crew/background-crew-desktop.jpg) no-repeat;
+    background: url("../assets/crew/background-crew-desktop.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-strong {
-    color: rgba(255, 255, 255, 0.5);
 }
 
 h1 {
