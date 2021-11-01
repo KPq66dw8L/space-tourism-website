@@ -49,6 +49,25 @@ a {
   color: inherit;
 }
 
+#logo {
+  position: absolute;
+  width: auto;
+  height: 50px;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+hr {
+  position: absolute;
+  width: 35%;
+  z-index: 1;
+  margin-top: 44px;
+  margin-left: 150px;
+  border: none;
+  border-bottom: 1px solid var(--white);
+}
+
 h1,
 h2,
 h3,
@@ -152,9 +171,17 @@ nav[role=navigation] {
   .nav-div ul li {
     margin-right: 10px;
   }
+
+  hr {
+    width: 20%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
+  hr {
+    display: none;
+  }
+
   b {
     display: none;
   }
