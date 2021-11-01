@@ -9,6 +9,10 @@ body {
     display: flex;
 }
 
+h5 {
+    color: var(--light-violet);
+}
+
 .home-background-div {
     background: url("../assets/home/background-home-desktop.jpg") no-repeat;
     background-color: --dark;

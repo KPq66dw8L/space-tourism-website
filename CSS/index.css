@@ -34,7 +34,7 @@ body {
   margin: 0;
   font-family: "BarlowCondensed", sans-serif;
   color: var(--white);
-  padding-top: 40px;
+  padding-top: 30px;
   overflow-x: hidden;
 }
 
@@ -99,7 +99,6 @@ h5 {
   font-size: 28px;
   letter-spacing: 4.75px;
   font-weight: 400;
-  color: var(--light-violet);
   text-transform: uppercase;
   margin: 0;
 }
