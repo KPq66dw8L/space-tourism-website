@@ -140,14 +140,25 @@ section {
     .scroll-container {
         width: 30%;
     }
+
+    .crew-all {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20vh;
+    }
+
+    h5 {
+        margin-left: 10vw;
+    }
 }
 
 /* Mobile */
 
 @media only screen and (max-width: 650px) {
-    .crew-all {
+    /* .crew-all {
         margin: 15vh 5vw 15vh 5vw;
-    }
+    } */
 
     .crew-content {
         grid-template-rows: 100px 200px 1fr;
@@ -170,5 +181,11 @@ section {
     .paragraph {
         font-size: 15px;
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .scroll-container {
+        width: 20%;
     }
 }
