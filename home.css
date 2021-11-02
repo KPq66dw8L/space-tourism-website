@@ -14,7 +14,7 @@ h5 {
 }
 
 .home-background-div {
-    background: url("../assets/home/background-home-desktop.jpg") no-repeat;
+    background: url("./assets/home/background-home-desktop.jpg") no-repeat;
     background-color: --dark;
     background-size: cover;
     background-attachment: fixed;
@@ -78,7 +78,7 @@ h5 {
 
 @media only screen and (max-width: 800px) {
     body {
-        background: url("../assets/home/background-home-tablet.jpg") no-repeat !important;
+        background: url("./assets/home/background-home-tablet.jpg") no-repeat !important;
         background-size: cover !important;
         padding-top: 10px;
         display: flex;
@@ -98,7 +98,7 @@ h5 {
 
 @media only screen and (max-width: 500px) {
     body {
-        background: url("../assets/home/background-home-mobile.jpg") no-repeat !important;
+        background: url("./assets/home/background-home-mobile.jpg") no-repeat !important;
         background-size: cover !important;
     }
 
