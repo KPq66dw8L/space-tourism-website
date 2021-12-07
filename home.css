@@ -72,7 +72,7 @@ h5 {
 @media only screen and (max-width: 1250px) {
     .home-content {
         margin-top: 25vh;
-        margin-left: 5vw;
+        margin-left: -33px;
     }
 }
 
