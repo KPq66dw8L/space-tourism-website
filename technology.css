@@ -142,6 +142,9 @@ h3 {
 }
 
 @media only screen and (max-width: 650px) {
+    body {
+        overflow-x: hidden; 
+    }
     nav {
         position: absolute;
     }
